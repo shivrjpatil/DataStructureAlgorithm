@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataStructureAlgoritm
 {
-    internal class BinarySearch
+    public class BinarySearch
     {
         string[] binaryArr;
         public void ReadTextFile(string filePath)
@@ -25,6 +25,14 @@ namespace DataStructureAlgoritm
                 }
             }
             Console.WriteLine("search element is not in available");
+
+        }
+        public void Display()
+        {
+            foreach (var data in binaryArr)
+            {
+                Console.WriteLine(data);
+            }
         }
     }
 }
